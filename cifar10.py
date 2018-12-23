@@ -12,7 +12,7 @@ from keras.optimizers import Adam
 from keras.preprocessing.image import ImageDataGenerator
 from keras.utils import np_utils
 
-from resnext import ResNeXt
+from resnext import ResNext
 
 batch_size = 100
 nb_classes = 10
@@ -26,7 +26,7 @@ depth = 29
 cardinality = 8
 width = 16
 
-model = ResNeXt(img_dim, depth=depth, cardinality=cardinality, width=width, weights=None, classes=nb_classes)
+model = ResNext(img_dim, depth=depth, cardinality=cardinality, width=width, weights=None, classes=nb_classes)
 print("Model created")
 
 model.summary()
